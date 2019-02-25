@@ -1,0 +1,34 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "compact": true,
+  "plugins": [
+    [
+      "transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    [
+      "transform-es2015-modules-commonjs",
+      {
+        "allowTopLevelThis": true
+      }
+    ],
+    "syntax-object-rest-spread",
+    "transform-es2015-object-super",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": true
+      }
+    ]
+  ]
+}

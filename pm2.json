@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "xique-pc-shop",
+      "script": "./server/start.js",
+      "instances": 1,
+      "exec_mode": "cluster",
+      "exec_interpreter": "node",
+      "node_args": "--harmony",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "max_memory_restart": "1500M",
+      "merge_logs": true,
+      "error_file": "/data/applogs/xique-pc-shop/pm2/log/error.log",
+      "out_file": "/data/applogs/xique-pc-shop/pm2/log/out.log",
+      "watch": false
+    }
+  ]
+}

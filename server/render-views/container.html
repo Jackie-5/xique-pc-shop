@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:image/ico;base64,aWNv">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"/>
+  <meta name="apple-mobile-web-app-title" content="喜鹊红包">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="applicable-device" content="mobile">
+  <title><%- title %></title>
+  <meta name="keywords" content="<%- keywords %>"/>
+  <meta name="description" content="<%- description %>"/>
+  <link rel="stylesheet" href="<%- envLinks.pathname %>/common.css">
+  <link rel="stylesheet" href="<%- envLinks.pathname %>/vendor.css">
+  <link rel="stylesheet" href="<%- pageCss %>">
+  <link rel="stylesheet" href="<%- iconfontCss %>">
+  <script type="text/javascript">
+    window.__INITIAL_DATA__ = <%- JSON.stringify(initState) %>;
+  </script>
+</head>
+<body>
+<div id="container-box" class="main-container html5Plus"><%- container %></div>
+
+<script crossorigin src="<%- envLinks.react.react %>"></script>
+<script crossorigin src="<%- envLinks.react.reactDom %>"></script>
+<script crossorigin src="<%- envLinks.axios %>"></script>
+<script crossorigin src="<%- envLinks.dayjs.dayjs %>"></script>
+<script crossorigin src="<%- envLinks.dayjs.dayjsCn %>"></script>
+
+<script src="<%- envLinks.pathname %>/common.js"></script>
+<script src="<%- envLinks.pathname %>/vendor.js"></script>
+<script src="<%- pageJs %>"></script>
+<script>window.ReactDOM.render(window.React.createElement(window.RApp.default, window.__INITIAL_DATA__), document.getElementById('container-box'));</script>
+</body>
+</html>
+
+
