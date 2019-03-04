@@ -1,17 +1,14 @@
 /**
  * Created by JackieWu on 2018/7/15.
  */
+const config = require('../index');
 
 module.exports = {
   client: 'xunke-app-react',
-  pathname: 'http://localhost:13001',
+  pathname: `http://localhost:${config.clientPort}`,
   pathJs: 'js',
   pathCss: 'css',
   middlePath: '',
-  axiosHost: 'http://localhost:12001',
-  toBHost: 'http://139.196.90.94:8183/backend/toc',
-  oldXunkeLink: 'https://app02.xunkyz.com/api',
-  tcBHost: 'http://139.196.90.94:8012',
   react: {
     react: 'https://unpkg.com/react@16/umd/react.development.js',
     reactDom: 'https://unpkg.com/react-dom@16/umd/react-dom.development.js',

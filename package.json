@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "clientPort": "13001",
   "scripts": {
     "dev": "NODE_ENV=development node ./bin/webpack-start.js",
     "dev:node": "NODE_ENV=development nodemon ./server/start.js",

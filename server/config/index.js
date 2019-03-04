@@ -4,7 +4,8 @@
 const path = require('path');
 
 module.exports = {
-  port: 12001,
+  port: 9090,
+  clientPort: 9091,
   STATIC_DIR: path.join(process.cwd(), 'client'),
   STATIC_DIR_CLIENT: path.join(process.cwd(), 'server', 'static'),
   DIST_STATIC: path.join(process.cwd(), 'dist'),

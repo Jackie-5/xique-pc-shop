@@ -6,9 +6,8 @@ const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const pkg = require('../package.json');
-
 const files = require('./entryfile');
+const config = require('../server/config');
 // npm 指令
 const ENV = process.env.NODE_ENV;
 
@@ -45,7 +44,7 @@ if (ENV === 'development') {
     }
   });
   //
-  server.listen(pkg.clientPort);
+  server.listen(config.clientPort);
 } else {
   webpackConfig.plugins.push(
     new UglifyJsPlugin(),
