@@ -22,9 +22,8 @@ module.exports = async (options) => {
     coord: '',
   };
 
-
   if (seoPageFile && seoPage && isSeo) {
-    const seoContent = require('../config/seo')(ctx);
+    const seoContent = require('../config/seo')(ctx, seoPageFile);
     seoContainer = Object.assign(seoContainer, seoContent[seoPageFile][seoPage](render));
   }
 

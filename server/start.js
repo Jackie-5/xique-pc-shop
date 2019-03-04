@@ -48,6 +48,7 @@ app.init = async () => {
     prefix: '/dist',
   }));
 
+
   app.listen(port, () => {
     app.logger.info(`The start success. port ${port}`)
   });

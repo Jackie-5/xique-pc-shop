@@ -7,7 +7,6 @@ const renderHtml = require('../../libs/render-html');
 
 module.exports = async (ctx, next) => {
 
-
   await renderHtml({
     ctx,
     render: await render({

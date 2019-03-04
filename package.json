@@ -6,6 +6,7 @@
   "clientPort": "13001",
   "scripts": {
     "dev": "NODE_ENV=development node ./bin/webpack-start.js",
+    "dev:node": "NODE_ENV=development nodemon ./server/start.js",
     "build": "npm run clear && NODE_ENV=production node ./bin/webpack-start.js",
     "test": "eslint ./",
     "clear": "rm -rf ./dist"
@@ -26,6 +27,7 @@
     "koa-views": "^6.1.5",
     "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
+    "nodemon": "^1.18.10",
     "os": "^0.1.1",
     "pinyin": "^2.8.3",
     "postcss-less": "^3.1.0",
@@ -73,5 +75,8 @@
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.1.14",
     "webpackbar": "^3.1.4"
+  },
+  "nodemonConfig": {
+    "ignore": ["/client/*"]
   }
 }
